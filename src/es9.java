@@ -4,7 +4,7 @@ public class es9 {
         char x = 'r';
         char y = 'g';
 
-        System.out.println("the result of compare is: " + compare(x, y));
+        System.out.println("the result of compare is: " + compare(x,y));
 
     }
 
