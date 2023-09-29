@@ -8,12 +8,10 @@ public class es20 {
 
         for (int x = 0; x <= n; x ++) {
 
-            int print = x;
-
             if(x == 5) {
                 continue;
             }
-            System.out.println(print);
+            System.out.println(x);
         }
     }
 }

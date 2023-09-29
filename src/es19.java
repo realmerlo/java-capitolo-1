@@ -6,9 +6,8 @@ public class es19 {
     }
     public static void printNum (int n) {
         for (int x = 0; x <= n; x ++) {
-            int print = x;
 
-            System.out.println(print);
+            System.out.println(x);
 
             if(x == 5){
                 break;
