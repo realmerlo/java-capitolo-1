@@ -1,4 +1,4 @@
-public class es4 {
+public class es04 {
     public static void main(String[] args) {
 
         int x = 24;

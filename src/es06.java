@@ -1,4 +1,4 @@
-public class es6 {
+public class es06 {
     public static void main(String[] args) {
 
         int x = 7;
