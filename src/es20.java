@@ -7,6 +7,7 @@ public class es20 {
     public static void printNum (int n) {
 
         for (int x = 0; x <= n; x ++) {
+
             int print = x;
 
             if(x == 5) {

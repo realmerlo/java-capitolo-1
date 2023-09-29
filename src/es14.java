@@ -11,9 +11,9 @@ public class es14 {
 
         switch(x){
             case 1: day = "lunedi";
-            break;
+                break;
             case 2: day = "martedi";
-            break;
+                break;
             case 3: day = "mercoledi";
                 break;
             case 4: day = "giovedi";
