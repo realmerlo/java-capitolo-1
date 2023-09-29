@@ -1,29 +1,33 @@
 public class es15 {
     public static void main(String[] args) {
-
+        int a = 2;
+        int b = 5;
         char x = '*';
-        String operation = getOperation(x);
+        int operation = getOperation(a, b, x);
         System.out.println(operation);
 
+
     }
-    public static String getOperation (char x) {
-        String operation;
 
-        switch(x){
 
-            case '+': operation = "sum";
+    public static int getOperation (int num1, int num2, char  op){
+        int operation = 0;
+
+        switch(op){
+
+            case '+': operation = num1 + num2;
                 break;
 
-            case '-': operation = "subtraction";
+            case '-': operation = num1 - num2;
                 break;
 
-            case '*': operation = "multiplication";
+            case '*': operation = num1 * num2;
                 break;
 
-            case '/': operation = "division";
+            case '/': operation = num1 / num2;
                 break;
 
-            default: operation = "Error";
+            default: System.out.println("error");
                 break;
         }
         return operation;
