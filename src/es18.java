@@ -6,10 +6,8 @@ public class es18 {
 
     }
     public static void printInv (int n, int m) {
-        for (int x = 0; x < m; x ++) {
-            int print = n - x;
-            System.out.println(print);
-        }
+        for (int x = n; x > n - m; x --){
+            System.out.println(x);}
     }
 }
 

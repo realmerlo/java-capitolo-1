@@ -4,12 +4,13 @@ public class es21 {
     public static void main(String[] args) {
     int l = 10;
     System.out.println(Arrays.toString(newArray(l)));
-    System.out.println(sum(newArray(l)));
+    System.out.println("the sum of all numbers in the array is: " + sum(newArray(l)));
     }
     public static int[] newArray (int length){
         int[] newArr = new int[length];
         for(int i = 0; i < length; i++){
             newArr[i] = i + 1;
+
         }
         return newArr;
     }

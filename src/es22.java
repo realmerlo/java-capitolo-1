@@ -1,18 +1,21 @@
 import java.util.Arrays;
+import java.util.Random;
 
 public class es22 {
     public static void main(String[] args) {
         int l = 10;
+
         char[] charArr = newArray(l);
         int counterOcc = counter(charArr, 'a');
-        System.out.println(counterOcc);
+        System.out.println(newArray(l));
+        System.out.println("numbers of occurrence of 'a' is: " + counterOcc);
 
     }
     public static char[] newArray (int length){
         char[] newArr = new char[length];
         for(char i = 0; i < length; i++){
-            newArr[i] = (char) (i + 'a');
-
+            Random r = new Random();
+            newArr[i] = (char)(r.nextInt(26) + 'a');
         }
         return newArr;
     }
