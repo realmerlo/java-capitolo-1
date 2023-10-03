@@ -3,9 +3,15 @@ public class es11 {
 
         int x = 15;
 
-        System.out.println("the numbers is odd? " + evenOrOdd(x));
+        evenOrOdd(x);
     }
-    public static boolean evenOrOdd(int x){
-        return !(x % 2 == 0);
+    public static void evenOrOdd(int x) {
+
+        if (!(x % 2 == 0)) {
+            System.out.println("the number is odd");
+        } else {
+            System.out.println("the number is even");;
+        }
+
     }
 }

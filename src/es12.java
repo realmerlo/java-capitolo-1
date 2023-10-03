@@ -6,19 +6,15 @@ public class es12 {
 
     public static void printN(int n) {
         if (n <= 100) {
-            String stamp = "";
-
-            if (n % 3 == 0) {
-                stamp += "Fizz";
+            if (n % 3 == 0 && n % 5 == 0) {
+                System.out.println("FizzBuzz");
+            } else if (n % 3 == 0) {
+                System.out.println("Fizz");
+            } else if (n % 5 == 0) {
+                System.out.println("Buzz");
+            } else {
+                System.out.println(n);
             }
-            if (n % 5 == 0) {
-                stamp += "Buzz";
-            }
-            if (stamp.isEmpty()) {
-                stamp += n;
-            }
-
-            System.out.println(stamp);
 
             printN(n + 1);
         }
