@@ -38,7 +38,7 @@ public class es25 {
         int firstArrayLength = array[0].length;
         int secondArrayLength = array[1].length;
 
-        if (firstArrayLength > secondArrayLength) {
+        if (firstArrayLength != secondArrayLength) {
             System.err.println("Error: the array rows and columns cant be exchanged");
             System.exit(0);
         }
