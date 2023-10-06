@@ -4,7 +4,7 @@ public class es12 {
         printN(n);
     }
 
-    public static void printN(int n) {
+            public static void printN(int n) {
         if (n <= 100) {
             if (n % 3 == 0 && n % 5 == 0) {
                 System.out.println("FizzBuzz");

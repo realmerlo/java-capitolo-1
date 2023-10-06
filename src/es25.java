@@ -4,6 +4,8 @@ public class es25 {
         System.out.println("start matrix is: ");
         printMatrix(matrix);
 
+        checkArrayLength(matrix);
+
         int[][] exchangedMatrix = exchangeRC(matrix);
 
         System.out.println("new matrix is: ");
@@ -32,7 +34,17 @@ public class es25 {
             System.out.println();
         }
     }
+    public static void checkArrayLength(int[][] array) {
+        int firstArrayLength = array[0].length;
+        int secondArrayLength = array[1].length;
+
+        if (firstArrayLength > secondArrayLength) {
+            System.err.println("Error: the array rows and columns cant be exchanged");
+            System.exit(0);
+        }
+    }
 }
+
 /*
    Scrivere un programma che contenga un metodo che permette di inizializzare una
    e di scambiare le sue righe e le sue colonne stampandola a video. Matrice di partenza
