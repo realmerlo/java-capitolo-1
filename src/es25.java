@@ -1,6 +1,6 @@
 public class es25 {
     public static void main(String[] args) {
-        int[][] matrix = {{1, 2, 3}, {4, 5, 6}};
+        int[][] matrix = {{1, 2, 3}, {4, 5, 6},{7,8,9}};
         System.out.println("start matrix is: ");
         printMatrix(matrix);
 
@@ -34,13 +34,17 @@ public class es25 {
             System.out.println();
         }
     }
-    public static void checkArrayLength(int[][] array) {
-        int firstArrayLength = array[0].length;
-        int secondArrayLength = array[1].length;
 
-        if (firstArrayLength != secondArrayLength) {
-            System.err.println("Error: the array rows and columns cant be exchanged");
-            System.exit(0);
+    public static void checkArrayLength(int[][] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length; j++) {
+                if (array[i].length != array[j].length) {
+                    System.err.println("Error: the array rows and columns cant be exchanged");
+                    System.exit(0);
+
+
+                }
+            }
         }
     }
 }
